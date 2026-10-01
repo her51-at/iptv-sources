@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CLOSE_SOURCE_PROXY: 'true'
+  CUSTOM_URL: 'https://52kds.ccwu.cc'      
     permissions:
       contents: write
 
-    strategy:
+    strategy:    
       matrix:
         node-version: [24.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
