@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CLOSE_SOURCE_PROXY: 'true'
-  CUSTOM_URL: 'https://52kds.ccwu.cc'      
+      CUSTOM_URL: 'https://52kds.ccwu.cc'      
     permissions:
       contents: write
 
