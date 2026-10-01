@@ -11,6 +11,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      CLOSE_SOURCE_PROXY: 'true'
     permissions:
       contents: write
 
