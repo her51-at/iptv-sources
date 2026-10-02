@@ -1,11 +1,14 @@
 import { default_m3u_filter, type ISource, type TSources } from './utils';
 
+
 // 不想要的地方台：名字里带这些词的频道会被过滤掉
 const BLOCKED_KEYWORDS = [
   '河南', '海南', '浙江', '河北', '广西', '山西', '安徽', '天津',
   '宁夏', '四川', '吉林', '云南', '内蒙古', '北京', '甘肃', '重庆',
   '陕西', '青海', '黑龙江', '辽宁', '贵州',
+  '山东', '江苏', '湖南', '湖北',
 ];
+
 
 export const guovin_filter: ISource['filter'] = (raw, caller, collectFn) => {
   const lines = raw.split('\n');
@@ -19,6 +22,7 @@ export const guovin_filter: ISource['filter'] = (raw, caller, collectFn) => {
   }
   return default_m3u_filter(kept.join('\n'), caller, collectFn);
 };
+
 
 export const guovin_sources: TSources = [
   {
