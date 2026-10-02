@@ -33,4 +33,4 @@ export const guovin_sources: TSources = [
     url: 'https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u',
     filter: guovin_filter,
   },
-};
+];
